@@ -4,6 +4,7 @@ The purpose of this repository is to have a way to run the Banksyd binary in doc
 # 📝 Prerequisites
 - Docker and Docker-Compose installed.
 - Follow the steps for the data folder
+- Change the moniker in the docker-compose.yaml file
 
 # 🚀 How to run
 `docker-compose up -d`
