@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    container_name: banksyd
+    command:
+     - "start"
+     - "--moniker"
+     - "changeme"
+     - "--home"
+     - "/home/ubuntu/.banksy/"
+     - "--p2p.seeds"
+     - "364b8245e72f083b0aa3e0d59b832020b66e9e9d@65.109.80.150:21500"
+    volumes:
+      - ./data:/home/ubuntu/.banksy/:z
