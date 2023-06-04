@@ -20,8 +20,4 @@ RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1001 ubuntu
 USER ubuntu
 WORKDIR /home/ubuntu
 
-
-RUN mkdir -p /home/ubuntu/.banksy/config && mkdir -p /home/ubuntu/.banksy/data && \
-        wget -O /home/ubuntu/.banksy/config/genesis.json https://raw.githubusercontent.com/notional-labs/composable-networks/main/mainnet/pregenesis.json
-
 ENTRYPOINT ["banksyd"]
