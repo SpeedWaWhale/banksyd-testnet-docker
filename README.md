@@ -21,5 +21,8 @@ All the data of the testnet will be persisted in the `./data` folder
 mkdir -p data/config
 # Setup the genesis file in your data/config folder
 wget -O data/config/genesis.json https://raw.githubusercontent.com/notional-labs/composable-networks/main/banksy-testnet-3/genesis.json
-chmod 777 data/
+chmod 777 -R data/
 ```
+
+# 🚑️ Tips
+- If you have permission problem after the start, just redo a `chmod 777 -R data/` and the problem should be fixed.
